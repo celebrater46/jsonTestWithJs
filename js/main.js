@@ -1,5 +1,6 @@
 "use strict";
 
+// Use Xampp or some local servers. Because this app uses XHR.
 // https://teratail.com/questions/245824
 let el = document.getElementById("output");
 const getJson = () => {
