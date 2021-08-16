@@ -2,7 +2,8 @@
 
 // https://teratail.com/questions/245824
 let el = document.getElementById("output");
-const getjson = () => {
+const getJson = () => {
+    console.log("hello world from getJson");
     let xhr = new XMLHttpRequest();
     xhr.onreadystatechange = () => {
         if (xhr.readyState == 4) {
@@ -13,10 +14,17 @@ const getjson = () => {
             }
         }
     }
-    xhr.open("GET", "json/test.json");
+    xhr.open("GET", "test.json");
     xhr.send();
 }
 
 const testJson = () => {
-    getjson();
+    getJson();
+    // console.log("hello world from testJson");
+}
+
+// alert("hello world");
+
+function test() {
+    console.log("Hello World from test()");
 }
